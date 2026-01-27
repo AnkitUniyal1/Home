@@ -34,13 +34,6 @@
 <body id="top">
 
 
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-        </div>
-    </div>
-
 
     <!-- # page wrap
     ================================================== -->
@@ -127,7 +120,9 @@
                             <img src="images/Profile.jpg" 
                                  srcset="images/Profile.jpg 1x, images/Profile.jpg 2x" 
                                  alt="Profile Picture" 
-                                 class="about-info__pic">
+                                 class="about-info__pic"
+                                 loading="lazy"
+                                 decoding="async">
                         </div>
                     </div>
                     
@@ -651,8 +646,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 </body>
 </html>
+
